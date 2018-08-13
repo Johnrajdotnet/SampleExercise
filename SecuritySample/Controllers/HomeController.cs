@@ -11,6 +11,8 @@ namespace SecuritySample.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            int j = 0;
+            var i = 1 / j;
             return View();
         }
     }

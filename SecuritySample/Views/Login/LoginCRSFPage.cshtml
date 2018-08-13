@@ -62,7 +62,7 @@
             UserName: parseInt($('#@Html.IdFor(m => m.UserName)').val()),
             Password: $('#@Html.IdFor(m => m.Password)').val(),
         }
-        inputlogon = { UserName: "fsf", Password: "fasfsa" };
+        inputlogon = { UserName: "john", Password: "777" };
         return inputlogon;
     }
     onclickEventLoadForLogon = function () {
@@ -70,7 +70,7 @@
 
             var logonModel = FillLogonObject(); debugger;
             if (true) {
-                var linkUrl = baseUrl + 'Home/CSRFLogin';
+                var linkUrl = baseUrl + 'Login/CSRFLogin';
                 JQAjax('POST', linkUrl, logonModel, "account", flag, "");
             }
 

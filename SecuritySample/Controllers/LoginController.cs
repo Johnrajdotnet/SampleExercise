@@ -30,7 +30,7 @@ namespace SecuritySample.Controllers
             var Loginn = Login;
             Random random = new Random();
             //var seed = FormsAuthentication.HashPasswordForStoringInConfigFile(Convert.ToString(random.Next()), "MD5");
-            return RedirectToAction("About", "Home");
+            return RedirectToAction("About", "Login");
             //return View("~/Views/Home/LoginPage.cshtml", Login);
         }
         [HttpPost]
