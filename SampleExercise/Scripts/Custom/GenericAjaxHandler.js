@@ -44,9 +44,10 @@ JQAjaxStringifyInput = function (httpType, linkUrl, postdata, onSucessFlag, data
 }
 
 onSucessEvent = function (data, onSucessFlag, dataflag, redirectToUrl) {
-    alert(data);
+    //alert(data);
     switch (onSucessFlag) {
         case 'account': $(".container.body-content").html(data); break;
+        case 'Home': InputAutoSerach(data); break;
     }
 }
 
